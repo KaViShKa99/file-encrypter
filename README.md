@@ -2,10 +2,10 @@
 
 Run this command in CMD 
 
-1st step
+step 01
 
 curl -O https://raw.githubusercontent.com/KaViShKa99/file-encrypter/main/create_exe.bat 
 
-2nd step
+step 02
 
 create_exe.bat
