@@ -125,8 +125,11 @@ def encrypted():
             original = file.read()
 
         encrypted = fernet.encrypt(original)
+        real_file = os.path.splitext(last_file)
+        remove_dot = real_file[1].replace('.','')
 
-        with open(f'{derectory_path}/encrypted_{last_file}', 'wb') as file:
+        with open(f'{derectory_path}/{real_file[0]}.ENCRYPTED[{remove_dot}]', 'wb') as file:
+        # with open(f'{derectory_path}/encrypted_{last_file}', 'wb') as file:
             file.write(encrypted)
         messagebox.showinfo("Encryption Result ","Encryption Complete")    
     except:
@@ -143,14 +146,21 @@ def Decrypted():
             encrypted = file.read()
         fernet = Fernet(createFernetObj(Decrypted_entry.get()))
         decrypted = fernet.decrypt(encrypted)
-
-        with open(f'{derectory_path}/decrypted_{last_file}', 'wb') as file:
+        real_file = os.path.splitext(last_file)
+        encrypt_extension = real_file[1]
+        real_extension = encrypt_extension[11:-1]
+        print(encrypt_extension)
+        print(real_extension)
+        # real_name = last_file.replace(".encrypted","")
+        
+        with open(f'{derectory_path}/decrypted_{real_file[0]}.{real_extension}', 'wb') as file:
             file.write(decrypted)
         messagebox.showinfo("Decryption Result ","Decryption Complete")
     except :
         messagebox.showinfo("Decryption Result", "Decryption Not Successfully, Tryagain !!!!!!")
     
     Decrypted_entry.delete(0, END)
+    selected_file2.config(text=" None ")
     
 tab_control.bind("<<NotebookTabChanged>>", on_tab_change)
 
