@@ -1,3 +1,7 @@
+
+![encrypt_tab](https://user-images.githubusercontent.com/66528404/227660962-e0cab8cd-e808-4462-992e-2d160baae05c.png ) 
+![decrypt_tab](https://user-images.githubusercontent.com/66528404/227660939-48b2508c-f925-4913-ad0c-0711b789e7e7.png)
+
 # File Encrypter
 File Encrypter is a Python tool that can encrypt and decrypt files using a password. It is easy to use and provides a simple UI for encrypting and decrypting your files.
 
