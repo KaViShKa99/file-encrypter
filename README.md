@@ -12,7 +12,7 @@ To run the file encrypter, navigate to the root directory of the project and run
 
 `python main.py`
 
-Click the "Encrypt" button to launch the user interface for the file encrypter. Enter a password in the "Password" field and select the file you want to encrypt. The encrypted file will be saved in the same directory as the original file, with the extension ".enc". To decrypt a file, enter the password used to encrypt the file and click the "Decrypt" button.
+Click the "Encrypt" button to launch the user interface for the file encrypter. Enter a password in the "Password" field and select the file you want to encrypt. The encrypted file will be saved in the same directory as the original file, with the extension ".ENCRYPTED[mp4]". To decrypt a file, enter the password used to encrypt the file and click the "Decrypt" button.
 
 ## Building a standalone executable
 
