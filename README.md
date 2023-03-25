@@ -1,5 +1,6 @@
 # File Encrypter
 File Encrypter is a Python tool that can encrypt and decrypt files using a password. It is easy to use and provides a simple UI for encrypting and decrypting your files.
+[Download File Encrypter](https://github.com/KaViShKa99/file-encrypter/blob/main/dist/KaviyaEncrypter.exe "Download File Encrypter")
 
 ## Installation
 To use this project, you will need to have Python 3.6 or higher installed on your system, as well as the PyInstaller 5.9.0 package. You can install PyInstaller using the following command:
